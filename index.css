@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: poppins;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-photo/abstract-studio-background-texture-light-blue-gray-gradient-wall-flat-floor-product_1258-53990.jpg?t=st=1734713151~exp=1734716751~hmac=0262baebf620009805677dba16585b77e4bc73c1e2f5c0a2779b8c681a0049a4&w=996);
+    background-position: center;
+    background-size: cover;
+}
+
+.frame,
+.box,
+.row,
+.card,
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width : 700px) {
+    .box{
+        scale: calc(0.5);
+    }
+}
+.box {
+    margin: auto;
+    width: 900px;
+    height: 100vh;
+}
+
+.card {
+    width: 60px;
+    height: 320px;
+    border-radius: 30px;
+    border: 2px solid #15383C;
+    background-color: rgb(84, 84, 84);
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: end;
+    transition: all ease-in-out 0.5s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.386);
+}
+
+.row {
+    min-width: 500px;
+    height: 60px;
+    gap: 15px !important;
+    justify-content: flex-start;
+}
+
+.description {
+    color: white;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .75s ease-in-out .3s;
+}
+
+.description>h1 {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.description>p {
+    font-size: medium;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.icon {
+    min-width: 50px;
+    min-height: 50px;
+    margin: 5px;
+    border-radius: 100%;
+    background-color: #001E31;
+    border: 2px solid #585858;
+    color: white;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    width: 500px;
+}
+
+input:checked+label .description {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card[for="box1"] {
+    background-image: url(box1.png);
+    background-position: center;
+    background-size: cover;
+}
+.card[for="box2"] {
+    background-image: url(box2.png);
+    background-position: center;
+    background-size: cover;
+}
+.card[for="box3"] {
+    background-image: url(box3.png);
+    background-position: center;
+    background-size: cover;
+}
+.card[for="box4"] {
+    background-image: url(box4.png);
+    background-position: center;
+    background-size: cover;
+}
