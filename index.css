@@ -10,9 +10,7 @@ body {
 .frame {
     width: 100%;
     height: 100%;
-    background-image: url(https://img.freepik.com/free-photo/abstract-studio-background-texture-light-blue-gray-gradient-wall-flat-floor-product_1258-53990.jpg?t=st=1734713151~exp=1734716751~hmac=0262baebf620009805677dba16585b77e4bc73c1e2f5c0a2779b8c681a0049a4&w=996);
-    background-position: center;
-    background-size: cover;
+    background-color: #8EA1B1;
 }
 
 .frame,
